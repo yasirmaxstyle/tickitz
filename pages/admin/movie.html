@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickitz</title>
+    <link rel="stylesheet" href="movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../src/logo-icon.svg">
+</head>
+
+<body>
+    <header>
+        <!-- top navigation bar -->
+        <nav>
+            <a href="../../index.html"><img src="../../src/logo-blue.svg" alt="logo-tickitz-blue"></a>
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Movie</a></li>
+            </ul>
+            <div>
+                <span>Location</span>
+                <img src="../../src/ic_round-navigate-next.svg" alt="">
+                <img src="../../src/bx_bx-search.svg" alt="">
+                <img src="../../src/jonas-icon.png" alt="jonas">
+            </div>
+            <img src="../../src/gg_menu-right-alt.svg" alt="menu-bar" id="menu-bar">
+        </nav>
+    </header>
+    <!-- end of nav -->
+    <main>
+        <section>
+            <div id="table-container">
+                <div>
+                    <h2>List Movie</h2>
+                    <div>
+                        <select name="Date" id="date">
+                            <option value="">November 2023</option>
+                        </select>
+                        <a href="add-new.html"><button>Add Movies</button></a>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Thumbnail</th>
+                            <th>Movie Name</th>
+                            <th>Category</th>
+                            <th>Released Date</th>
+                            <th>Duration</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="../../src/spiderman.png" alt="spiderman" width="46px" height="38px"></td>
+                            <td>Spiderman HomeComing</td>
+                            <td>Action, Adventure</td>
+                            <td>07/05/2023</td>
+                            <td>2 Hours 15 Minutes</td>
+                            <td>
+                                <img src="../../src/eyes.svg" alt="eyes" width="31px">
+                                <img src="../../src/edit.svg" alt="edit" width="31px">
+                                <img src="../../src/DELETE.svg" alt="delete" width="31px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="../../src/black-widow.png" alt="spiderman" width="46px" height="38px"></td>
+                            <td>Avengers End Game</td>
+                            <td>Sci-Fi, Adventure</td>
+                            <td>10/06/2023</td>
+                            <td>2 Hours 15 Minutes</td>
+                            <td>
+                                <img src="../../src/eyes.svg" alt="eyes" width="31px">
+                                <img src="../../src/edit.svg" alt="edit" width="31px">
+                                <img src="../../src/DELETE.svg" alt="delete" width="31px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="../../src/spiderman.png" alt="spiderman" width="46px" height="38px"></td>
+                            <td>Spiderman HomeComing</td>
+                            <td>Action, Adventure</td>
+                            <td>02/03/2023</td>
+                            <td>2 Hours 15 Minutes</td>
+                            <td>
+                                <img src="../../src/eyes.svg" alt="eyes" width="31px">
+                                <img src="../../src/edit.svg" alt="edit" width="31px">
+                                <img src="../../src/DELETE.svg" alt="delete" width="31px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="../../src/black-widow.png" alt="spiderman" width="46px" height="38px"></td>
+                            <td>Avengers End Game</td>
+                            <td>Sci-Fi, Adventure</td>
+                            <td>01/09/2023</td>
+                            <td>2 Hours 15 Minutes</td>
+                            <td>
+                                <img src="../../src/eyes.svg" alt="eyes" width="31px">
+                                <img src="../../src/edit.svg" alt="edit" width="31px">
+                                <img src="../../src/DELETE.svg" alt="delete" width="31px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img src="../../src/spiderman.png" alt="spiderman" width="46px" height="38px"></td>
+                            <td>Spiderman HomeComing</td>
+                            <td>Action, Adventure</td>
+                            <td>07/08/2023</td>
+                            <td>2 Hours 15 Minutes</td>
+                            <td>
+                                <img src="../../src/eyes.svg" alt="eyes" width="31px">
+                                <img src="../../src/edit.svg" alt="edit" width="31px">
+                                <img src="../../src/DELETE.svg" alt="delete" width="31px">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pages-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
