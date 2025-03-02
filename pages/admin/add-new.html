@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickitz</title>
+    <link rel="stylesheet" href="add-new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../src/logo-icon.svg">
+</head>
+
+<body>
+    <header>
+        <!-- top navigation bar -->
+        <nav>
+            <a href="../../index.html"><img src="../../src/logo-blue.svg" alt="logo-tickitz-blue"></a>
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Movie</a></li>
+            </ul>
+            <div>
+                <span>Location</span>
+                <img src="../../src/ic_round-navigate-next.svg" alt="">
+                <img src="../../src/bx_bx-search.svg" alt="">
+                <img src="../../src/jonas-icon.png" alt="jonas">
+            </div>
+            <img src="../../src/gg_menu-right-alt.svg" alt="menu-bar" id="menu-bar">
+        </nav>
+    </header>
+    <!-- end of nav -->
+    <main>
+        <section>
+            <form>
+                <h2>Add New Movie</h2>
+                <p>Upload Image</p>
+                <div class="upload">Upload</div>
+                <label for="name">Movie Name</label>
+                <input type="text" id="name" placeholder="Spider-Man:Homecoming">
+                <label for="cat">Category</label>
+                <input type="text" id="cat" placeholder="Action, Adventure, Sci-Fi">
+                <div class="flex">
+                    <div style="flex: 1;">
+                        <label for="release">Release Date</label>
+                        <input type="datetime" id="release" placeholder="07/05/2020">
+                    </div>
+                    <div>
+                        <label for="hour/minute">Duration (hour/minute)</label>
+                        <input type="number" id="hour" min="0" placeholder="2">
+                        <input type="number" id="minute" min="0" placeholder="13">
+                    </div>
+                </div>
+                <label for="director">Director Name</label>
+                <input type="text" id="director" placeholder="Jon Watts">
+                <label for="Cast">Cast</label>
+                <input type="text" id="director" placeholder="Tom Holland, Michael Keaton, Robert Dow.">
+                <textarea name="synopsis" id="synopsis" rows="10" cols="250"
+                    placeholder="Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, | "></textarea>
+                <label for="Location">Add Location</label>
+                <input type="location" id="location" placeholder="Purwokerto, Bandung, Bekasi">
+                <label for="date">Set Date and Time</label>
+                <input type="date" id="date" name="date">
+                <div class="flex">
+                    <img src="../../src/plus.svg" alt="plus sign" width="62px">
+                    <span>08.30am</span>
+                    <span>10.30am</span>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
