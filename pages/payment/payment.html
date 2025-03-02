@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickitz</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../src/logo-icon.svg">
+</head>
+
+<body>
+    <header>
+        <!-- top navigation bar -->
+        <nav>
+            <a href="../../index.html"><img src="../../src/logo-blue.svg" alt="logo-tickitz-blue"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Movie</a></li>
+                <li><a href="">Buy Ticket</a></li>
+            </ul>
+            <div>
+                <button id="btn-sign-in">Sign In</button>
+                <button id="btn-sign-up">Sign Up</button>
+            </div>
+            <img src="../../src/gg_menu-right-alt.svg" alt="menu-bar" id="menu-bar">
+        </nav>
+    </header>
+    <main>
+        <div id="overlay"></div>
+        <section>
+            <div class="page">
+                <div>
+                    <p>DATE & TIME</p>
+                    <p>Tuesday, 07 July 2020 at 02:00pm</p>
+                    <p>MOVIE TITLE</p>
+                    <p>Spider-Man: Homecoming</p>
+                    <p>CINEMA NAME</p>
+                    <p>CineOne21 Cinema</p>
+                    <p>NUMBER OF TICKETS</p>
+                    <p>3 pieces</p>
+                    <p>TOTAL PAYMENT</p>
+                    <p>$30,00</p>
+                </div>
+                <form>
+                    <P>Personal Information</P>
+                    <label for="name"> Full Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" name="phone">
+                </form>
+                <div class="grid-img">
+                    <img src="../../src/logos_google-pay.svg" alt="google pay">
+                    <img src="../../src/logos_visa.svg" alt="visa logo">
+                    <img src="../../src/Logo GoPay (SVG-240p) - FileVector69 1.svg" alt="logo GoPay">
+                    <img src="../../src/logos_paypal.svg" alt="logo patypal">
+                    <img src="../../src/Logo DANA (PNG-240p) - FileVector69 1.svg" alt="logo dana">
+                    <img src="../../src/Bank BCA Logo (SVG-240p) - FileVector69 1.svg" alt="">
+                    <img src="../../src/Bank BRI (Bank Rakyat Indonesia) Logo (SVG-240p) - FileVector69 1.svg" alt="">
+                    <img src="../../src/OVO.svg" alt="">
+                </div>
+                <button id="order">Pay your order</button>
+            </div>
+        </section>
+        <section>
+            <div id="payment-info">
+                <p>payment Info</p>
+                <p>No. Rekening Virtual</p>
+                <p>12321328913829724</p>
+                <button>Copy</button>
+                <p>Total Payment</p>
+                <p>$30</p>
+                <p>Pay this payment bill before it is due on June 23, 2023. If the bill has not been paid by the specified time, it will be forfeited</p>
+                <a href="result.html"><button>Check Payment</button></a>
+                <p id="cancel">Pay Later</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="subscribe">
+            <p>Subscribe to our newsletter</p>
+            <input type="text" name="first-name" id="email" placeholder="First name">
+            <input type="text" name="email" id="email" placeholder="Email address">
+            <button>Subscribe Now</button>
+        </div>
+        <div id="footer-container">
+            <div>
+                <img src="../src/logo-blue.svg" alt="">
+                <span>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</span>
+            </div>
+            <div>
+                <p>Explore</p>
+                <ul>
+                    <li>Cinemas</li>
+                    <li>Movies List</li>
+                    <li>My ticket</li>
+                    <li>Notification</li>
+                </ul>
+            </div>
+            <div>
+                <p>Our Sponsor</p>
+                <img src="../src/sponsor/ebv.id 2.svg" alt="">
+                <img src="../src/sponsor/CineOne21 2.svg" alt="">
+                <img src="../src/sponsor/hiflix 2.svg" alt="">
+            </div>
+            <div>
+                <p>Follow us</p>
+                <img src="../src/media/eva_facebook-outline.svg" alt="">
+                <span>Tickitz Cinema id</span>
+                <img src="../src/media/bx_bxl-instagram.svg" alt="">
+                <span>tickitz.id</span>
+                <img src="../src/media/eva_twitter-outline.svg" alt="">
+                <span>tickitz.id</span>
+                <img src="../src/media/feather_youtube.svg" alt="">
+                <span>Tickitz Cinema id</span>
+            </div>
+        </div>
+        <p id="copy">&copy; 2020 Tickitz. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const payment = document.getElementById('payment-info');
+        const overlay = document.getElementById('overlay');
+        const order = document.getElementById('order');
+        const cancel = document.getElementById('cancel')
+
+        order.addEventListener('click', ()=> {
+            overlay.style.display = "block";
+            payment.style.display = "block";
+        })
+
+        cancel.addEventListener('click', ()=> {
+            overlay.style.display = "none";
+            payment.style.display = "none";
+        })
+        
+    </script>
+</body>
+
+</html>
