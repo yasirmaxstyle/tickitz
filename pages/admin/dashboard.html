@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickitz</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../src/logo-icon.svg">
+</head>
+
+<body>
+    <header>
+        <!-- top navigation bar -->
+        <nav>
+            <a href="../../index.html"><img src="../../src/logo-blue.svg" alt="logo-tickitz-blue"></a>
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="./movie.html">Movie</a></li>
+            </ul>
+            <div>
+                <span>Location</span>
+                <img src="../../src/ic_round-navigate-next.svg" alt="">
+                <img src="../../src/bx_bx-search.svg" alt="">
+                <img src="../../src/jonas-icon.png" alt="jonas">
+            </div>
+            <img src="../../src/gg_menu-right-alt.svg" alt="menu-bar" id="menu-bar">
+        </nav>
+    </header>
+    <!-- end of nav -->
+    <main>
+        <section id="sales">
+            <h2>Sales Chart</h2>
+            <select name="movie" id="movie">
+                <option value="" selected>Movie Name</option>
+                <option value="">Spider-Man: Homecoming</option>
+                <option value="">Avengers End Game</option>
+            </select>
+            <select name="periode" id="periode">
+                <option value="" selected>Weekly</option>
+                <option value="">Daily</option>
+                <option value="">Monthly</option>
+                <option value="">Annually</option>
+            </select>
+            <button>Filter</button>
+            <p>Avengers End Game</p>
+            <div id="graph-grid">
+                <div>$800</div>
+                <div><img src="../../src/Graph lines.svg" alt="graph"></div>
+                <div>$600</div>
+                <div>$400</div>
+                <div>$200</div>
+                <div>$0</div>
+                <div></div>
+                <div>Jan</div>
+                <div>Feb</div>
+                <div>Mar</div>
+                <div>Apr</div>
+                <div>May</div>
+                <div>Jun</div>
+            </div>
+        </section>
+
+        <section id="sales">
+            <h2>Ticket Sales</h2>
+            <select name="movie" id="movie">
+                <option value="" selected>Category</option>
+                <option value="">Adventure</option>
+                <option value="">Action</option>
+            </select>
+            <select name="periode" id="periode">
+                <option value="" selected>Location</option>
+                <option value="">Purwokerto</option>
+                <option value="">Jakarta</option>
+                <option value="">Cirebon</option>
+            </select>
+            <button>Filter</button>
+            <p>Adventure, Purwokerto</p>
+            <div id="graph-grid">
+                <div>$800</div>
+                <div><img src="../../src/Graph lines.svg" alt="graph"></div>
+                <div>$600</div>
+                <div>$400</div>
+                <div>$200</div>
+                <div>$0</div>
+                <div></div>
+                <div>Jan</div>
+                <div>Feb</div>
+                <div>Mar</div>
+                <div>Apr</div>
+                <div>May</div>
+                <div>Jun</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
