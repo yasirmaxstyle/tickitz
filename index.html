@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickitz</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -15,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="/src/logo-icon.svg">
 </head>
 
@@ -32,6 +32,7 @@
                 <a href="pages/sign-in.html"><button id="btn-sign-in">Sign In</button></a>
                 <a href="pages/sign-up.html"><button id="btn-sign-up">Sign Up</button></a>
             </div>
+            <!-- burger menu -->
             <div id="menu-bar">
                 <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -107,8 +108,10 @@
                         <img src="src/black-widow.png" alt="black widow">
                     </div>
                     <h3 class="movie-title">Black Widow</h3>
-                    <a class="movie-category">Action</a>
-                    <a class="movie-category">Adventure</a>
+                    <div>
+                        <p class="movie-category">Action</p>
+                        <p class="movie-category">Adventure</p>
+                    </div>
                 </div>
                 <div>
                     <div id="img-cover">
@@ -120,8 +123,10 @@
                         <img src="src/witches.png" alt="the witches">
                     </div>
                     <h3 class="movie-title">The Witches</h3>
-                    <div class="movie-category">Comedy</div>
-                    <div class="movie-category">Adventure</div>
+                    <div>
+                        <p class="movie-category">Comedy</p>
+                        <p class="movie-category">Adventure</p>
+                    </div>
                 </div>
                 <div>
                     <div id="img-cover">
@@ -133,8 +138,10 @@
                         <img src="src/tenet.png" alt="tenet">
                     </div>
                     <h3 class="movie-title">Tenet</h3>
-                    <div class="movie-category">Action</div>
-                    <div class="movie-category">Sci-Fi</div>
+                    <div>
+                        <p class="movie-category">Action</p>
+                        <p class="movie-category">Sci-Fi</p>
+                    </div>
                 </div>
                 <div>
                     <div id="img-cover">
@@ -146,8 +153,10 @@
                         <img src="src/spiderman.png" alt="spiderman">
                     </div>
                     <h3 class="movie-title">Spiderman</h3>
-                    <div class="movie-category">Action</div>
-                    <div class="movie-category">Adventure</div>
+                    <div>
+                        <p class="movie-category">Action</p>
+                        <p class="movie-category">Adventure</p>
+                    </div>
                 </div>
             </div>
             <div>
@@ -192,36 +201,36 @@
                     <img src="src/black-widow.png" alt="black widow">
                     <div class="movie-title">Black Widow</div>
                     <h4>December 2024</h4>
-                    <div style="margin: 20px 0;">
-                        <div class="movie-category">Action</div>
-                        <div class="movie-category">Adventure</div>
+                    <div>
+                        <p class="movie-category">Action</p>
+                        <p class="movie-category">Adventure</p>
                     </div>
                 </div>
                 <div>
                     <img src="src/witches.png" alt="the witches">
                     <h3 class="movie-title">The Witches</h3>
                     <h4>January 2024</h4>
-                    <div style="margin: 20px 0;">
-                        <div class="movie-category">Comedy</div>
-                        <div class="movie-category">Adventure</div>
+                    <div>
+                        <p class="movie-category">Comedy</p>
+                        <p class="movie-category">Adventure</p>
                     </div>
                 </div>
                 <div>
                     <img src="src/tenet.png" alt="tenet">
                     <h3 class="movie-title">Tenet</h3>
                     <h4>June 2024</h4>
-                    <div style="margin: 20px 0;">
-                        <div class="movie-category">Action</div>
-                        <div class="movie-category">Sci-Fi</div>
+                    <div>
+                        <p class="movie-category">Action</p>
+                        <p class="movie-category">Sci-Fi</p>
                     </div>
                 </div>
                 <div>
                     <img src="src/spiderman.png" alt="spiderman">
                     <h3 class="movie-title">Spiderman</h3>
                     <h4>March 2024</h4>
-                    <div style="margin: 20px 0;">
-                        <div class="movie-category">Action</div>
-                        <div class="movie-category">Adventure</div>
+                    <div>
+                        <p class="movie-category">Action</p>
+                        <p class="movie-category">Adventure</p>
                     </div>
                 </div>
             </div>
@@ -234,7 +243,7 @@
                 <input type="text" name="first-name" id="first-name" placeholder="First name">
                 <label for="email"></label>
                 <input type="text" name="email" id="email" placeholder="Email address">
-                <button>Subscribe Now</button>
+                <button type="submit">Subscribe Now</button>
             </div>
         </section>
     </main>
@@ -274,6 +283,7 @@
         </div>
         <p id="copy">&copy; 2020 Tickitz. All Rights Reserved.</p>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
