@@ -1,0 +1,25 @@
+{
+  "name": "week3-weklytask",
+  "version": "1.0.0",
+  "description": "weekly task week 3-4 HTML, CSS, JS DOM",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasirmaxstyle/tickitz.git"
+  },
+  "author": "yasirmaxstyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasirmaxstyle/tickitz/issues"
+  },
+  "homepage": "https://github.com/yasirmaxstyle/tickitz#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
