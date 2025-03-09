@@ -1,0 +1,4 @@
+
+async function getDetailsMovie(id) {
+    
+}
