@@ -1,0 +1,148 @@
+:root {
+    --fontmain: "Mulish", serif;
+    --fontsub: "Inter", serif;
+    --colormain: #fff;
+    --colorsub: #1D4ED8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: #ECEDF2;
+    font-family: var(--fontmain);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colormain);
+    border-bottom: 2px solid #dedede;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 100px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav a {
+    color: rgba(15, 23, 42, 1);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    line-height: 20px;
+    size: 14px;
+}
+
+nav>a img {
+    width: 130px;
+    height: 51px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu-bar {
+    display: none;
+}
+
+/* end of navbar */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+#table-container {
+    width: 1105px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#table-container > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#date{
+    height: 56px;
+    width: 284px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 30px;
+}
+
+#table-container button {
+    height: 56px;
+    width: 140px;
+    border: none;
+    background-color: rgba(29, 78, 216, 1);
+    color: #fff;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(230, 234, 240, 1);
+}
+
+
+.pages-container {
+    display: flex;
+    gap: 8px;
+    margin: 50px;
+}
+
+.pages-container > div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #DEDEDE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages-container > div:hover {
+    background-color: #1D4ED8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.pages-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
