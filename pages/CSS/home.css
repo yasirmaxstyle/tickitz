@@ -112,7 +112,7 @@ main>section:first-child {
 }
 
 #banner-container {
-    background-image: url("../src/bg-main.png");
+    background-image: url("../../src/bg-main.png");
     background-position: center;
     height: 462px;
     margin: 0;
@@ -240,6 +240,22 @@ section:nth-child(2)>div:last-child label:hover {
 
 /* END OF SECTION 2 */
 
+/* .loading {
+    display: block;
+    position: relative;
+    height: 100px;
+} */
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side,#000 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+  }
+  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
 section:nth-child(3) {
     max-width: 1366px;
     width: 100%;
@@ -254,7 +270,7 @@ section:nth-child(3) {
 #movie-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
+    grid-template-rows: auto;
     justify-content: center;
     column-gap: 20px;
     row-gap: 20px;
@@ -266,8 +282,10 @@ section:nth-child(3) {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px 0;
-    height: max-content;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    padding: 20px 10px;
+    border-radius: 5px;
 }
 
 #movie-container img {
@@ -353,7 +371,7 @@ div:has(.genres) {
     font-weight: 400;
     background-color: rgba(160, 163, 189, 0.1);
     color: #A0A3BD;
-    padding: 12px 25px;
+    padding: 7px 15px;
     border-radius: 20px;
 }
 

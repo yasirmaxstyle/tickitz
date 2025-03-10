@@ -112,7 +112,6 @@ section:first-of-type {
 }
 
 #banner {
-    background-image: url("../src/spiderman-bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 16%;
@@ -146,7 +145,7 @@ section:nth-child(2) {
     display: grid;
     width: 100%;
     grid-template-columns: 264px 1fr 2fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-rows: 132px 132px 1fr;
     gap: 20px;
 }
 
@@ -161,7 +160,7 @@ section:nth-child(2) {
     object-fit: cover;
     object-position: bottom;
     position: relative;
-    transform: translateY(-37%);
+    transform: translateY(-35%);
     z-index: 5;
 }
 
@@ -178,11 +177,11 @@ section:nth-child(2) {
 }
 
 #genre {
-    margin: 20px 0;
+    display: flex;
+    gap: 10px;
 }
 
 #genre p {
-    display: inline;
     font-weight: 400;
     background-color: rgba(160, 163, 189, 0.1);
     color: #A0A3BD;
@@ -247,25 +246,25 @@ section:nth-child(2) {
     flex-direction: column;
     max-width: 1366px;
     width: 100%;
-    margin: 50px 0;
+    margin: 20px 0;
     padding: 0 130px;
 }
 
-.book > p {
+.book>p {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1px;
     display: inline;
 }
 
-form > p {
+form>p {
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: .5px;
     display: inline;
 }
 
-form > span {
+form>span {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: .75px;
@@ -307,14 +306,15 @@ form > span {
     align-items: center;
     height: 56px;
     background-color: #EFF0F6;
-    
+
 }
 
 #booking>div>div>img {
     margin: 25px;
 }
 
-#booking>div>div>select , input[type="text"] {
+#booking>div>div>select,
+input[type="text"] {
     flex: 1;
     border: none;
     appearance: none;
@@ -346,7 +346,7 @@ form > span {
     margin: 50px 0;
 }
 
-#cinema-container> label {
+#cinema-container>label {
     display: flex;
     position: relative;
     justify-content: center;
@@ -357,12 +357,12 @@ form > span {
     border-radius: 8px;
 }
 
-#cinema-container> label:hover {
+#cinema-container>label:hover {
     background-color: #1D4ED8;
     cursor: pointer;
 }
 
-#cinema-container> label:hover path {
+#cinema-container>label:hover path {
     fill: white;
 }
 
@@ -370,7 +370,7 @@ form > span {
     appearance: none;
 }
 
-#cinema-container input[type=radio]:checked + svg path {
+#cinema-container input[type=radio]:checked+svg path {
     fill: white;
 }
 
@@ -517,7 +517,7 @@ footer {
         width: 100%;
         padding: 0;
     }
-    
+
     #grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 3fr;

@@ -1,4 +1,4 @@
-// import { API_KEY } from "./API_KEY/api.js"
+// import { API_KEY } from "../../API_KEY/api.js";
 
 async function getDataMovie() {
     try {
@@ -46,7 +46,7 @@ async function getDataMovie() {
                     if (error instanceof Error) console.log(error.message);
                 }
             }));
-        console.log(movieWithGenre);
+
         // DOM
         movieWithGenre.forEach((element) => {
             // main wrapper
@@ -59,8 +59,9 @@ async function getDataMovie() {
             const btnWrap = document.createElement('div');
             const linkDetails = document.createElement('a');
             linkDetails.dataset.id = element.id;
-            linkDetails.href = './details.html';
+            linkDetails.href = `./details.html?id=${element.id}`;
             const btnDetails = document.createElement('button');
+            btnDetails.setAttribute("type", "button");
             linkDetails.append(btnDetails);
             btnDetails.textContent = 'Details';
             const linkBuy = document.createElement('a');
@@ -101,5 +102,20 @@ async function getDataMovie() {
         if (error instanceof Error) console.log(error.message);
     }
 }
+
+
+const loadingElement = document.querySelector('.loader');
+
+if (document.readyState !== 'loading') {
+    console.log('document is already ready, just execute code here');
+    loadingElement.style.display = 'none';
+} else {
+    document.addEventListener('DOMContentLoaded', openload)
+}
+
+function openload() {
+    console.log('document was not ready, place code here');
+    loadingElement.style.display = 'block';
+};
 
 getDataMovie();
